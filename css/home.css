@@ -1,0 +1,126 @@
+* { padding: 0; margin: 0; }
+
+.home {
+    background-color: #14141d;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 2vw;
+    top: 10vh;
+    width: 50vw;
+    height: 80vh;
+    color: white;
+    max-width: 100%;
+}
+
+.greeting {
+}
+
+.hello {
+    font-size: 7vmin;
+    font-weight: normal;
+}
+
+.namecontainer {
+    font-size: 7vmin;
+    white-space: nowrap;
+}
+
+.name {
+    color: #1b79f5;
+    font-size: 8vmin;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 5vmin;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.info {
+    font-size: 3vmin;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    max-width: 90vw;
+    margin-top: 2vh;
+}
+
+.contacts {
+    max-width: fit-content;
+    display: flex;
+    position: relative;
+    margin-top: 3vh;
+    margin-left: 20px;
+}
+
+.contact-icon {
+    width: calc(calc(6vmin + 6vmax) / 2);
+    height: calc(calc(6vmin + 6vmax) / 2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+    background-color: #1e1e1e;
+    cursor: pointer;
+    margin-top: 24px;
+    box-shadow: 0px 0px calc(calc(1vmin + 1vmax) / 2) 0px white;
+    border: 2px solid white;
+    transition-duration: 400ms;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+
+.contact-icon-image {
+    width: calc(calc(3.5vmin + 3.5vmax) / 2);
+    height: calc(calc(3.5vmin + 3.5vmax) / 2);
+    user-select: none;
+}
+
+/*General resizing*/
+
+@media only screen and (max-height: 1000px) {
+    .introduction {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+/*Phone*/
+@media (max-aspect-ratio: 1/1) {
+    .introduction {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+        align-items: center;
+        text-align: center;
+    }
+    .hello {
+        font-size: 9vw; 
+    }
+    .namecontainer {
+        font-size: 9vw;
+    }
+    .name {
+        font-size: 9.5vw;
+    }
+    .title {
+        font-size: 6vw;
+    }
+
+    .info {
+        font-size: 4vw;
+    }
+}

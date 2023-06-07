@@ -1,0 +1,133 @@
+.skills {
+    background-color: white;
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    padding-top: 120px;
+    padding-bottom: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-text {
+    font-size: 6vmax;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.languages-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.language {
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    cursor: pointer;
+}
+
+.language-icon {
+    width: 220px;
+    height: 220px;
+    padding: 20px;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.language-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    width: 100%;
+    flex: 1;
+}
+
+.language-name {
+    font-size: 42px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skills-small-text {
+    margin-top: 80px;
+    font-size: 3vmax;
+    padding-bottom: 100px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skills-smaller-text {
+    margin-top: 40px;
+    font-size: 1.8vmax;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skills-smaller-text-link {
+    color: #171515cc;
+    font-size: 1.8vmax;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.technologies-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.technology {
+    position: relative;
+    display: flex;
+    width: 140px;
+    height: 210px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    transition-duration: 300ms;
+}
+
+.technology:hover {
+    color: white;
+    background-color: #1e1e1e;
+    transform: scale(1.05);
+}
+
+.technology-icon {
+    width: 110px;
+    height: 110px;
+    padding: 20px;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.technology-name {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
