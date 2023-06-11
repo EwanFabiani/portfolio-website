@@ -1,15 +1,19 @@
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .in-dev-warning {
     position: fixed;
     top: 0;
-    right: 0;
     z-index: 100;
     background-color: yellow;
+    width: 100vw;
+    text-align: center;
+    
 }
 
 .in-dev-warning-text {
     position: relative;
+    width: 100%;
 }
