@@ -1,4 +1,15 @@
 body {
-    height: 500%;
     font-family: 'Roboto', sans-serif;
+}
+
+.in-dev-warning {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background-color: yellow;
+}
+
+.in-dev-warning-text {
+    position: relative;
 }
